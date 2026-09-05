@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-pixel: var(--font-pixel), cursive, sans-serif;
+  --font-sans: var(--font-quicksand), sans-serif;
+
+  --color-cloud-1: #FFFFFF;
+  --color-cloud-2: #F7FAFC;
+  --color-cloud-3: #EAF2FA;
+
+  --color-sky-1: #BEE3F8;
+  --color-sky-2: #90CDF4;
+  --color-sky-3: #63B3ED;
+
+  --color-sky-primary: #4299E1;
+  --color-sky-dark: #2B6CB0;
+  
+  --color-sunset-glow: #FFF3C4;
+}
+
+/* Custom Pixel Art UI Utilities */
+.pixel-border {
+  border: 4px solid #2B6CB0;
+  box-shadow: inset -4px -4px 0px 0px rgba(0, 0, 0, 0.08), 4px 4px 0px 0px #2B6CB0;
+}
+
+.pixel-panel {
+  background-color: #F7FAFC;
+  border: 4px solid #2B6CB0;
+  box-shadow: inset -4px -4px 0px 0px rgba(0, 0, 0, 0.05), 6px 6px 0px 0px #2B6CB0;
+}
+
+.pixel-btn {
+  font-family: var(--font-pixel);
+  letter-spacing: 0.05em;
+  background-color: #4299E1;
+  color: #ffffff;
+  border: 4px solid #2B6CB0;
+  box-shadow: 4px 4px 0px 0px #2B6CB0;
+  transition: all 0.15s ease-in-out;
+}
+
+.pixel-btn:hover {
+  background-color: #63B3ED;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #2B6CB0;
+}
+
+.pixel-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px 0px #2B6CB0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: #2B6CB0;
+  background-color: #BEE3F8;
+  overflow-x: hidden;
+}
+
